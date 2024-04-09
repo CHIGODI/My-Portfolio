@@ -8,28 +8,36 @@ html{
     scroll-behavior:smooth ;
 }
 body{
-    background: #080808;
-    color: white;
-
+    color: purple;
 }
+
 #header{
     width: 100%;
-    height: 100vh;
-    background-image: url(images/background.JPG);
-    background-size: cover;
 }
 .container{
     padding: 10px 10%;
 
 }
+.top{
+    padding: 0 10%;
+    width: 1000px;
+}
 nav{
+    border-bottom: solid 1px #DDDDDD;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    height: 70px;
+    width: 1000px;
+    z-index: 1000;
 }
+
 .logo{
-    width: 140px;
+   font-size: 36px;
+   color: hsl(var(--hue-color), 8%, 15%);
 }
 nav ul li{
     display: inline-block;
@@ -38,15 +46,16 @@ nav ul li{
 }
 nav ul li a{
    text-decoration: none;
-   color: white;
-   font-size: 18px; 
+   color: purple;
+   font-size: 18px;
+   font-weight: 200px; 
    position: relative;
 }
 nav ul li a::after{
     content:'' ;
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: purple;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -58,7 +67,7 @@ nav ul li a:hover::after{
    width: 100%;
 }
 .header-text{
-    margin-top: 20%;
+    margin-top: 30%;
     font-size: 30px;
 }
 .header-text h1{
@@ -69,6 +78,7 @@ nav ul li a:hover::after{
     color: #ff004f;
 }
 
+/***------------****/
 #about{
     padding: 80px 0;
     color: #ababab;
@@ -169,7 +179,7 @@ nav ul li a:hover::after{
     display:inline-block ;
 }
 .services-list div:hover{
-    background: #ff004f;
+    background: purple;
     transform: translateY(-10px);
 }
 
@@ -198,7 +208,7 @@ nav ul li a:hover::after{
 .layer{
   width: 100%;
   height: 0; 
-  background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+  background: linear-gradient(rgba(0,0,0,0.6),purple);
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -242,15 +252,17 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 2px solid purple;
     padding: 14px 50px ;
     border-radius: 6px;
     text-decoration: none;
-    color: white;
+    color: purple;
+    font-weight: 300;
     transition: background 0.5s;
 }
  .btn:hover{
-    background: #ff004f;
+    background: purple;
+    color: white;
  }
 
 
@@ -266,7 +278,7 @@ nav ul li a:hover::after{
      margin-top: 30px;
  }
  .contact-left p i{
-    color: #ff004f;
+    color: purple;
     margin-right: 15px;
     font-size:25px ;
  }
@@ -284,12 +296,13 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
  }
  .social-icons a:hover{
-    color: #ff004f;
+    color: purple;
     transform: translateY(-5px);
  }
  .btn.btn2{
     display: inline-block;
-    background: #ff004f;
+    background: purple;
+    color: white;
  }
 
  .contact-right form{
@@ -312,6 +325,12 @@ form .btn2{
     margin-top: 20px;
     cursor: pointer;
 }
+form .btn2:hover{
+    border: 2px solid purple;
+    color: purple;
+    background-color: white;
+}
+
 form .btn2 :active{
     color:black;
 }
@@ -323,6 +342,7 @@ form .btn2 :active{
     background: #262626;
     font-weight: 300;
     margin-top: 20px;
+    color: #ababab;
 
 }
 
@@ -386,6 +406,7 @@ nav .fa-solid{
     }
     .copyright{
         font-size: 14px;
+        color: white;
     }
 }
 
